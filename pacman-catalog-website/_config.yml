@@ -1,0 +1,17 @@
+
+title: Opendylan Package Catalog
+email: dylan-lang@googlegroups.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Opendylan Package Catalog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dylan-lang.github.io"
+twitter_username: DylanLanguage
+github_username: dylan-lang
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+collections:
+  packages:
+    output: true

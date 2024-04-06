@@ -1,0 +1,33 @@
+name: build
+
+on:
+  push:
+    # all branches
+  pull_request:
+    # all branches
+
+  # This enables the Run Workflow button on the Actions tab.
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Opendylan
+        uses: dylan-lang/install-opendylan@v3
+
+      - name: Download dependencies
+        run: dylan update
+
+      - name: Build tests
+        run: dylan build --all
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: |
+            _build/bin/
+            _build/lib/

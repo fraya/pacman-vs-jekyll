@@ -1,0 +1,19 @@
+{
+    "name": "pacman-vs-jekyll",
+    "description": "Create a Jekyll website from Dylan's PACMAN catalog",
+    "category": "utilities",
+    "keywords": [ "website", "pacman-catalog" ],
+    "version": "0.1.0",
+    "contact": "fernandoraya at gmail",
+    "url": "https://github.com/fraya/pacman-vs-jekyll",
+    "license": "GPL-3",
+    "license-url": "https://www.gnu.org/licenses/gpl-3.0-standalone.html",
+    "dependencies": [
+	"command-line-parser@3.2.0",
+	"dylan-tool@0.11.0"
+    ],
+    "dev-dependencies": [
+	"sphinx-extensions@0.2.0",
+	"testworks@3.2.0"
+    ]
+}
